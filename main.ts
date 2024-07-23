@@ -252,7 +252,15 @@ namespace Tinybit {
         move_steps(n_steps); 
     }  
     
-
+//% blockId=move_five_steps block="Move 5 steps"
+    //% weight=99
+    //% blockGap=10
+    //% color="#006400"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function move_five_steps(): void {
+        Move_Steps(5);  // Calls the existing Move_Steps function with 5 steps
+    }
+    
 
     //% blockId=Tinybit_RGB_Car_Big block="RGB_Car_Big|value %value"
     //% weight=98
