@@ -252,6 +252,21 @@ namespace Tinybit {
         move_steps(n_steps); 
     }  
     
+    //% blockId=move_forward_for_60_seconds block="Move forward for 60 seconds"
+    //% weight=99
+    //% blockGap=10
+    //% color="#006400"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+export function move_forward_for_60_seconds(): void {
+    const startTime = control.millis();  // Get the current time in milliseconds
+    const duration = 60000;             // Duration for 60 seconds (60000 milliseconds)
+    
+    while (control.millis() - startTime < duration) {
+        move_step();  // Replace this with your movement function
+        basic.pause(100);  // Adjust the pause duration to control movement speed and responsiveness
+    }
+}
+
 //% blockId=move_five_steps block="Move 5 steps"
     //% weight=99
     //% blockGap=10
