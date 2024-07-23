@@ -143,43 +143,43 @@ export function playSoundForCarState(state: CarState): void {
             playSound(enMusic.dadadum);
             break;
     }
-}
-// Helper function to play sound
-function playSound(sound: enMusic): void {
-    // Define the mapping of `enMusic` values to specific musical notes or patterns
-    const soundMapping = {
-        [enMusic.dadadum]: music.builtinSoundEffect(music.builtinSoundEffects.dadadum),
-        [enMusic.entertainer]: music.builtinSoundEffect(music.builtinSoundEffects.entertainer),
-        [enMusic.prelude]: music.builtinSoundEffect(music.builtinSoundEffects.prelude),
-        [enMusic.ode]: music.builtinSoundEffect(music.builtinSoundEffects.ode),
-        [enMusic.nyan]: music.builtinSoundEffect(music.builtinSoundEffects.nyan),
-        [enMusic.ringtone]: music.builtinSoundEffect(music.builtinSoundEffects.ringtone),
-        [enMusic.funk]: music.builtinSoundEffect(music.builtinSoundEffects.funk),
-        [enMusic.blues]: music.builtinSoundEffect(music.builtinSoundEffects.blues),
-        [enMusic.birthday]: music.builtinSoundEffect(music.builtinSoundEffects.birthday),
-        [enMusic.wedding]: music.builtinSoundEffect(music.builtinSoundEffects.wedding),
-        [enMusic.funereal]: music.builtinSoundEffect(music.builtinSoundEffects.funereal),
-        [enMusic.punchline]: music.builtinSoundEffect(music.builtinSoundEffects.punchline),
-        [enMusic.baddy]: music.builtinSoundEffect(music.builtinSoundEffects.baddy),
-        [enMusic.chase]: music.builtinSoundEffect(music.builtinSoundEffects.chase),
-        [enMusic.ba_ding]: music.builtinSoundEffect(music.builtinSoundEffects.ba_ding),
-        [enMusic.wawawawaa]: music.builtinSoundEffect(music.builtinSoundEffects.wawawawaa),
-        [enMusic.jump_up]: music.builtinSoundEffect(music.builtinSoundEffects.jump_up),
-        [enMusic.jump_down]: music.builtinSoundEffect(music.builtinSoundEffects.jump_down),
-        [enMusic.power_up]: music.builtinSoundEffect(music.builtinSoundEffects.power_up),
-        [enMusic.power_down]: music.builtinSoundEffect(music.builtinSoundEffects.power_down),
-    };
+// }
+// // Helper function to play sound
+// function playSound(sound: enMusic): void {
+//     // Define the mapping of `enMusic` values to specific musical notes or patterns
+//     const soundMapping = {
+//         [enMusic.dadadum]: music.builtinSoundEffect(music.builtinSoundEffects.dadadum),
+//         [enMusic.entertainer]: music.builtinSoundEffect(music.builtinSoundEffects.entertainer),
+//         [enMusic.prelude]: music.builtinSoundEffect(music.builtinSoundEffects.prelude),
+//         [enMusic.ode]: music.builtinSoundEffect(music.builtinSoundEffects.ode),
+//         [enMusic.nyan]: music.builtinSoundEffect(music.builtinSoundEffects.nyan),
+//         [enMusic.ringtone]: music.builtinSoundEffect(music.builtinSoundEffects.ringtone),
+//         [enMusic.funk]: music.builtinSoundEffect(music.builtinSoundEffects.funk),
+//         [enMusic.blues]: music.builtinSoundEffect(music.builtinSoundEffects.blues),
+//         [enMusic.birthday]: music.builtinSoundEffect(music.builtinSoundEffects.birthday),
+//         [enMusic.wedding]: music.builtinSoundEffect(music.builtinSoundEffects.wedding),
+//         [enMusic.funereal]: music.builtinSoundEffect(music.builtinSoundEffects.funereal),
+//         [enMusic.punchline]: music.builtinSoundEffect(music.builtinSoundEffects.punchline),
+//         [enMusic.baddy]: music.builtinSoundEffect(music.builtinSoundEffects.baddy),
+//         [enMusic.chase]: music.builtinSoundEffect(music.builtinSoundEffects.chase),
+//         [enMusic.ba_ding]: music.builtinSoundEffect(music.builtinSoundEffects.ba_ding),
+//         [enMusic.wawawawaa]: music.builtinSoundEffect(music.builtinSoundEffects.wawawawaa),
+//         [enMusic.jump_up]: music.builtinSoundEffect(music.builtinSoundEffects.jump_up),
+//         [enMusic.jump_down]: music.builtinSoundEffect(music.builtinSoundEffects.jump_down),
+//         [enMusic.power_up]: music.builtinSoundEffect(music.builtinSoundEffects.power_up),
+//         [enMusic.power_down]: music.builtinSoundEffect(music.builtinSoundEffects.power_down),
+//     };
 
-    // Get the sound effect for the given sound enum
-    const soundEffect = soundMapping[sound];
+//     // Get the sound effect for the given sound enum
+//     const soundEffect = soundMapping[sound];
     
-    // Play the sound effect if it's defined
-    if (soundEffect) {
-        music.playSoundEffect(soundEffect, music.SoundExpressionPlayMode.InBackground);
-    } else {
-        console.log("Sound not defined.");
-    }
-}
+//     // Play the sound effect if it's defined
+//     if (soundEffect) {
+//         music.playSoundEffect(soundEffect, music.SoundExpressionPlayMode.InBackground);
+//     } else {
+//         console.log("Sound not defined.");
+//     }
+// }
 
     function setPwmRGB(red: number, green: number, blue: number): void {
 
