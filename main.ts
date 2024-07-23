@@ -263,31 +263,7 @@ namespace Tinybit {
         Move_Steps(5);  // Calls the existing Move_Steps function with 5 steps
     }
     
-   //% blockId=turn_90_degrees block="Turn 90 degrees"
-    //% weight=99
-    //% blockGap=10
-    //% color="#006400"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-export function turn_90_degrees(): void {
-    // Implement the turning action
-    // Adjust the motor speeds and durations as needed
-    Tinybit.MotorRun(Tinybit.Motors.M1, Tinybit.Dir.CW, 255);  // Rotate one motor clockwise
-    Tinybit.MotorRun(Tinybit.Motors.M2, Tinybit.Dir.CCW, 255); // Rotate the other motor counter-clockwise
-    basic.pause(1000);  // Adjust the duration to achieve a 90-degree turn
-    Tinybit.MotorStopAll();  // Stop all motors
-}
-//% blockId=turn_90_degrees block="Turn 90 degrees"
-    //% weight=99
-    //% blockGap=10
-    //% color="#006400"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function turn_90_degrees(): void {
-        // Assuming you use a servo for turning
-        Tinybit.ServoRun(Tinybit.Servos.S1, 90);  // Move servo to 90 degrees
-        basic.pause(1000);  // Wait for the servo to complete the movement
-    }
-    
-        
+
 
     //% blockId=Tinybit_RGB_Car_Big block="RGB_Car_Big|value %value"
     //% weight=98
